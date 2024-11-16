@@ -5,7 +5,7 @@ from .serializers import UserSerializer
 
 
 class UserDetailViews(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+    queryset = User.objects.all()   # Запрос всех пользователей
+    serializer_class = UserSerializer   # Сериализатор для представления данных пользователя
 
     
